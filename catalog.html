@@ -3,52 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">
-        Каталог продукции онлайн и офлайн-магазина Глэйси по продаже мороженого собственного проиводства 
-      </h1>
-      <nav class="navigation">
-        <a href="index.html"><img src="logo.png" width="137" height="56"></a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" for="delivery-id">Доставка и оплата</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" for="about-id">О компании</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li>
-            <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+        <h1 class="visually-hidden">
+          Онлайн и офлайн-магазин Глэйси по продаже мороженого собственного проиводства 
+        </h1>
+        <nav class="navigation">
+            <a href="index.html">
+              <img src="image/Logo_Gllacy.svg" width="137" height="56" alt="Логотип Глэйси">
             </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Корзина
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" for="delivery-id">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" for="about-id">О компании</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li>
+              <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <img src="image/search_button.svg" width="15" height="15" alt="Поиск по сайту">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <img src="image/login_button.svg" width="15" height="15" alt="Войти">
+              <a class="navigation-link" href="#">Вход</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <img src="image/cart_button.svg" width="16" height="15" alt="Войти">
+                <span class="visually-hidden">
+                  Корзина
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main class="main-inner">
         <header class="inner-header">
-            <h1 class="inner-header-title">Каталог</h1>
+            <h1 class="inner-header-title visually-hidden">Каталог</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -60,6 +66,7 @@
                 <a class="breadcrumbs-link">Сливочное</a>
               </li>
             </ul>
+            <h2 class="selected-product">Сливочное мороженое</h2>
         </header>
         <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -156,83 +163,87 @@
         </section>
         <section class="catalog catalog-popular">
          <ul>
-             <li class="catalog-item">
-              <img src="" width="168" height="168" alt="Шарик мороженого Малина">
-              <h4>
-                Малинка
-              </h4>
-              <p>
-                Сливочное мороженое с малиновым джемом
-              </p>
-              <h4>
-                310 ₽/кг
-              </h4>
-              <button class="button-add-to-cart" type="button">
-                <span class="visually-hidden">
-                  Добавить в корзину
-                </span>
-              </button> 
-            </li>
-             <li class="catalog-item">
-              <img src="" width="168" height="168" alt="Шарик мороженого Фисташка">
-              <h4>
-                Фисташка
-              </h4>
-              <p>
-                Фисташковый пломбир с кусочками шоколада
-              </p>
-              <h4>
-                340 ₽/кг
-              </h4>
-              <button class="button-add-to-cart" type="button">
-                <span class="visually-hidden">
-                  Добавить в корзину
-                </span>
-              </button> 
-            </li>
             <li class="catalog-item">
-              <img src="" width="168" height="168" alt="Шарик мороженого Черника">
-              <h4>
-                Черника
-              </h4>
-              <p>
-                Крем-брюле с черничным джемом
-              </p>
-              <h4>
-                330 ₽/кг
-              </h4>
-              <button class="button-add-to-cart" type="button">
-                <span class="visually-hidden">
-                  Добавить в корзину
-                </span>
-              </button> 
-            </li>
+                <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
+                <h4 class="catalog-item-title">
+                  Малинка
+                </h4>
+                <p class="catalog-item-about">
+                  Сливочное мороженое <br>
+                  с малиновым джемом
+                </p>
+                <h4 class="catalog-item-price">
+                  310 ₽/кг
+                </h4>
+                <button class="button-add-to-cart" type="button">
+                  <span class="visually-hidden">
+                    Добавить в корзину
+                  </span>
+                </button> 
+              </li>
+              <li class="catalog-item">
+                <img src="image/catalog/catalog_2.png" width="168" height="168" alt="Шарик мороженого Фисташка">
+                <h4 class="catalog-item-title">
+                  Фисташка
+                </h4>
+                <p class="catalog-item-about">
+                  Фисташковый пломбир <br>
+                  с кусочками шоколада
+                </p>
+                <h4 class="catalog-item-price">
+                  340 ₽/кг
+                </h4>
+                <button class="button-add-to-cart" type="button">
+                  <span class="visually-hidden">
+                    Добавить в корзину
+                  </span>
+                </button> 
+              </li>
+              <li class="catalog-item">
+                <img src="image/catalog/catalog_3.png" width="168" height="168" alt="Шарик мороженого Черника">
+                <h4 class="catalog-item-title">
+                  Черника
+                </h4>
+                <p class="catalog-item-about">
+                  Крем-брюле <br>
+                  с черничным джемом
+                </p>
+                <h4 class="catalog-item-price">
+                  330 ₽/кг
+                </h4>
+                <button class="button-add-to-cart" type="button">
+                  <span class="visually-hidden">
+                    Добавить в корзину
+                  </span>
+                </button> 
+              </li>
+              <li class="catalog-item">
+                <img src="image/catalog/catalog_4.png" width="168" height="168" alt="Шарик мороженого Бабл-гам">
+                <h4 class="catalog-item-title">
+                  Бабл-гам
+                </h4>
+                <p class="catalog-item-about">
+                  Ванильный пломбир <br>
+                  со сладкой посыпкой
+                </p>
+                <h4 class="catalog-item-price">
+                  320 ₽/кг
+                </h4>
+                <button class="button-add-to-cart" type="button">
+                  <span class="visually-hidden">
+                    Добавить в корзину
+                  </span>
+                </button> 
+              </li>
             <li class="catalog-item">
-              <img src="" width="168" height="168" alt="Шарик мороженого Бабл-гам">
-              <h4>
-                Бабл-гам
-              </h4>
-              <p>
-                Ванильный пломбир со сладкой посыпкой
-              </p>
-              <h4>
-                320 ₽/кг
-              </h4>
-              <button class="button-add-to-cart" type="button">
-                <span class="visually-hidden">
-                  Добавить в корзину
-                </span>
-              </button> 
-            </li>
-            <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Ежевика">
-                <h4>
+                <img src="image/catalog/catalog_5.png" width="168" height="168" alt="Шарик мороженого Ежевика">
+                <h4 class="catalog-item-title">
                   Ежевика
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Сливочное мороженое с ежевичным джемом
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   330 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -242,16 +253,16 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Банан">
-                <h4>
+                <img src="image/catalog/catalog_6.png" width="168" height="168" alt="Шарик мороженого Банан">
+                <h4 class="catalog-item-title">
                   Банан
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Сливочный пломбир с банановым вкусом
                 </p>
                 <h4>
                   340 ₽/кг
-                </h4>
+                </h4 class="catalog-item-price">
                 <button class="button-add-to-cart" type="button">
                   <span class="visually-hidden">
                     Добавить в корзину
@@ -259,14 +270,14 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Шоколадка">
-                <h4>
+                <img src="image/catalog/catalog_7.png" width="168" height="168" alt="Шарик мороженого Шоколадка">
+                <h4 class="catalog-item-title">
                   Шоколадка
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Классический шоколадный пломбир
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   270 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -276,14 +287,14 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Клубничка">
-                <h4>
+                <img src="image/catalog/catalog_8.png" width="168" height="168" alt="Шарик мороженого Клубничка">
+                <h4 class="catalog-item-title">
                   Клубничка
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Сливочный пломбир с клубничным вкусом
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   300 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -293,14 +304,14 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Лимон">
-                <h4>
+                <img src="image/catalog/catalog_9.png" width="168" height="168" alt="Шарик мороженого Лимон">
+                <h4 class="catalog-item-title">
                   Лимон
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Освежающий лимонный сорбет
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   310 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -310,14 +321,14 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Ментол">
-                <h4>
+                <img src="image/catalog/catalog_10.png" width="168" height="168" alt="Шарик мороженого Ментол">
+                <h4 class="catalog-item-title">
                   Ментол
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Сливочный пломбир с ментоловым сиропом
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   320 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -327,14 +338,14 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Орешек">
-                <h4>
+                <img src="image/catalog/catalog_11.png" width="168" height="168" alt="Шарик мороженого Орешек">
+                <h4 class="catalog-item-title">
                   Орешек
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Фисташковый пломбир с шоколадным сиропом
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   360 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -344,14 +355,14 @@
                 </button> 
              </li>
               <li class="catalog-item">
-                <img src="" width="168" height="168" alt="Шарик мороженого Крем-брюле">
-                <h4>
+                <img src="image/catalog/catalog_12.png" width="168" height="168" alt="Шарик мороженого Крем-брюле">
+                <h4 class="catalog-item-title">
                   Крем-брюле
                 </h4>
-                <p>
+                <p class="catalog-item-about">
                     Классическое крем-брюле 
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   280 ₽/кг
                 </h4>
                 <button class="button-add-to-cart" type="button">
@@ -391,58 +402,64 @@
               </ul>
 
           </section>
-        
-
     </main>
-    <footer>
+    <footer class="page-footer">
         <section class="social">
           <ul class="social-list">
             <li class="social-item">
               <a class="button" href="#">
+                <img src="image/vk_icon.svg" width="24" height="24" alt="Мы ВКонтакте">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a class="button" href="#">
+                <img src="image/facebook.svg" width="24" height="24" alt="Мы в Фейсбуке">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-item">
               <a class="button" href="#">
+                <img src="image/instagram.svg" width="24" height="24" alt="Мы в Инстаграм">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
           </ul>
         </section>
-        <section>
-          <ul>
-            <li>
-              <a href="#">  <img src=""> Для поставщиков
+        <section class="page-footer-link">
+          <ul class="page-footer-link-list">
+            <li class="page-footer-link-item">
+              <a href="#">  <img src="image/heart-icon.svg" width="14" height="13">Для поставщиков
               </a>
             </li>
-            <li>
+            <li class="page-footer-link-item">
               <a href="#"> 
                 Наши документы
               </a>
             </li>
-            <li>
+            <li class="page-footer-link-item">
               <a href="#"> 
                 О производстве
               </a>
             </li>
-            <li>
+            <li class="page-footer-link-item">
               <a href="#"> 
                 Экологические стандарты
               </a>
             </li>
           </ul>
         </section>
-        <section>
-          <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img src="">
-            .html academy</a></p>
+        <section class="made-in">
+          <img src="image/logo_htmlacademy.svg" width="93" height="27" alt="логотип htmlacademy">
+          <p class="about-text">
+            Сделано в 
+            <a class="htmlacademy-link" target="_blank" href="https://htmlacademy.ru/">
+            .html academy
+            </a> 
+            © 2021
+          </p>
         </section>
       </footer>
-      
+
     </body>
     </html>
