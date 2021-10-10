@@ -19,19 +19,62 @@
     src: url(../fonts/inter-900.woff2) format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+  }
 body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family:inter, sans-serif;
     font-size: 16px;
     line-height: 22px;
     background: #FEAFC3;
     color: #2D3440;
 }
+.main-container {
+    flex-grow: 1;
+  }
+.navigation-list{
+    width: 490px;
+    margin: 0;
+    padding: 0;
+}
+.navigation-user{
+    width: 490px;
+    margin: 0;
+    padding: 0;
+    margin-left:auto;
+}
+.social-list{
+    display:flex;
+    justify-content: flex-end;
+}
+
 li{
-    list-style-type: none;
+    list-style-type: none;   
 }
 a{
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
+.navigation{
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+.slider{
+    display:flex;
+    width: 1170px;
+    justify-content: flex-start;
+}
+
 .navigation-link{
     color:inherit;
     line-height: 20px;
@@ -61,10 +104,35 @@ a{
     line-height: 46px;
     text-align: center;
 }
+.main-present-item{
+    display: flex;
+    width: 1158px;
+    justify-content: flex-start;
+}
+.present-item-first{
+    margin-right: 30px;
+    display: flex;
+}
+.present-item-second{
+    display: flex;
+}
 .present-item-titel{
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+}
+.catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about{
+    display:flex;
+    width: 1170px;
+    margin-bottom: 80px;;
+
+}
+.white-underlayer{
+    margin: auto;   
 }
 .catalog-item-title{
     text-align: center;
@@ -77,8 +145,19 @@ a{
     font-size: 20px;
     line-height: 24px;
 }
+.about-us-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 .about-us p{
     color: #565C66;
+}
+.new-and-newsletter{
+    display:flex;
+    width: 1170px;
+}
+.new-in-blog{
+    margin-right: 30px;;
 }
 .new-in-blog-title{
     font-weight:400;
@@ -92,6 +171,10 @@ a{
     line-height: 30px;
     color: #2D3440;
 }
+.newsletter{
+    display: flex;
+}
+
 .form-label{
     font-weight: 700;
     line-height: 20px;
@@ -114,6 +197,18 @@ a{
     line-height: 20px;
     color: #565C66;
 }
+.page-footer{
+    display:flex;
+    width: 1170px;
+
+}
+.page-footer .social{
+    margin-right: 300px;
+}
+.page-footer-link{
+    margin-right: 200px;
+}
+
 .page-footer-link-item a{
     font-weight: 400;
     font-size: 14px;
@@ -173,13 +268,13 @@ a{
 #rectangle_blog{
     width: 570px;
     height: 216px;
-    background: url(..//image/blog_background.jpg);
+    background: url(../image/blog_background.jpg);
     border-radius: 16px;
 }
 #rectangle_wafer_about-us{
     width: 1170px;
     height: 480px;
-    background: url(..//image/wafer_background.jpg);
+    background: url(../image/wafer_background.jpg);
     border-radius: 16px;
 }
 #rectangle_white_about-us{
@@ -191,7 +286,7 @@ a{
 #rectangle_newsletter{
     width: 570px;
     height: 220px;
-    background: url(..//image/mail_background.png);
+    background: url(../image/mail_background.png);
 }
 #rectangle_newsletter-white{
     width: 558px;
@@ -202,12 +297,26 @@ a{
 #rectangle_delivery{
     width: 1170px;
     height: 534px;
-    background: url(..//image/delivery_background.jpg);
+    background: url(../image/delivery_background.jpg);
     border-radius: 16px;
 }
 #rectangle_adress{
     width: 1170px;
     height: 492px;
-    background: url(..//image/feedback_background.jpg);
+    background: url(../image/feedback_background.jpg);
     border-radius: 16px;
+}
+.catalog-products-sorting{
+    display:flex;
+    width:807px;
+    flex-wrap:wrap;
+
+}
+.main-pagination{
+    display:flex;
+    width:1170px;
+}
+.pagination{
+    display:flex;
+    margin-left:335px;
 }

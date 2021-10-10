@@ -11,7 +11,7 @@
         Онлайн и офлайн-магазин Глэйси по продаже мороженого собственного проиводства 
       </h1>
       <nav class="navigation">
-        <img src="image/Logo_Gllacy.svg" width="137" height="56" alt="Логотип Глэйси">
+        <img class="logo-gllacy" src="image/Logo_Gllacy.svg" width="137" height="56" alt="Логотип Глэйси">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -23,7 +23,7 @@
             <a class="navigation-link" for="about-id">О компании</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li>
             <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
           </li>
@@ -50,7 +50,8 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <div class="page-container">
+    <main class="main-container">
         <section class="slider">
           <div class="slider-title">
             <h2 class="slider-title-item">Нежный пломбир <br>с клубничным джемом</h2>
@@ -59,7 +60,28 @@
               и молока с вкуснейшим клубничным джемом<br> 
               – это идеальный десерт для всей семьи. 
             </p>
+            <button class="tipical-button-white" type="button">
+              Заказать
+            </button>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">Пломбир с клубничным джемом</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">Мороженое со вкусом банана</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">Пломбир с маршмеллоу</span>
+                </button>
+              </li>
+            </ol>
           </div>
+          <div class="slider-item">
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
@@ -69,26 +91,6 @@
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
-          <button class="tipical-button-white" type="button">
-            Заказать
-          </button>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">Пломбир с клубничным джемом</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Мороженое со вкусом банана</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Пломбир с маршмеллоу</span>
-              </button>
-            </li>
-          </ol>
           <div class="social">
             <ul class="social-list">
               <li class="social-item">
@@ -111,13 +113,16 @@
               </li>
             </ul>
           </div>
+          </div>
         </section>
         <section class="present">
           <h2 class="present-title">
             Заказывайте мороженое <br>
             и получайте подарки!
           </h2>
-          <div id="rectangle_raspberries_present" class="present-item">
+          <div class="main-present-item">
+          <div id="rectangle_raspberries_present" class="present-item-first">
+            <div>
             <h3 class="present-item-titel">
               Малинка даром!
             </h3>
@@ -126,12 +131,14 @@
               мороженого, добавим в ваш заказ <br>
               банку малинового варенья бесплатно.
             </p>
-            <img src="image/raspberries_decor.png" width="181" height="284" alt="Рожок с малиной">
             <button class="tipical-button-white" type="button">
               Хочу подарок
-            </button> 
+            </button>
+            </div>
+            <img src="image/raspberries_decor.png" width="181" height="240" alt="Рожок с малиной">
           </div>
-          <div id="rectangle_marshmallow_present" class="present-item">
+          <div id="rectangle_marshmallow_present" class="present-item-second">
+            <div>
             <h3 class="present-item-titel">
               Маршмеллоу даром!
             </h3>
@@ -140,10 +147,12 @@
               в ваш заказ упаковку нежных <br>
               зефирок совершенно бесплатно.
             </p>
-            <img src="image/marshmallow_decor.png" width="232" height="359" alt="Рожок с маршмеллоу">
             <button class="tipical-button-white" type="button">
               Хочу подарок
             </button> 
+            </div>
+            <img src="image/marshmallow_decor.png" width="232" height="249" alt="Рожок с маршмеллоу">
+          </div>
           </div>
         </section>
         <section class="catalog-popular">
@@ -151,7 +160,7 @@
             Попробуйте самые популярные <br>
             вкусы нашего мороженого
           </h2>
-          <ul>
+          <ul class="catalog-list">
           <li class="catalog-item">
             <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
             <h4 class="catalog-item-title">
@@ -227,44 +236,48 @@
           </ul>
         </section>
         <section id="rectangle_wafer_about-us" class="about">
-          <h2 class="about-us-title">
-            Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес
-          </h2>
-          <div id="rectangle_white_about-us">
-          <div class="about-us">
-            <p>
+          <div id="rectangle_white_about-us" class="white-underlayer">
+            <h2 class="about-us-title">
+              Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес
+            </h2> 
+          
+          <div class="about-us-list">  
+            <div class="about-us">
               <img src="image/ice_cream_icon.svg" width="48" height="48">
+            <p>
               Все наше мороженое изгатавливается на собственном <br>
               производстве, с использованием современного <br> 
               оборудования и проверенных временем технологий.
             </p>
           </div>
           <div class="about-us">
+            <img src="image/leaf_icon.svg" width="48" height="48">
             <p>
-              <img src="image/leaf_icon.svg" width="48" height="48">
               Для приготовления мороженого используются сливки<br> 
               и молоко высочайшего качества. Все ингредиенты<br> 
               и добавки произведены из натурального сырья. 
             </p>
           </div>
           <div class="about-us">
+            <img src="image/cow_icon.svg" width="48" height="48">
             <p>
-              <img src="image/cow_icon.svg" width="48" height="48">
               Закупка ингредиентов производится только<br>
               у проверенных фермерских хозяйств, с которыми<br>
               нас связывает долговременное сотрудничество. 
             </p>
           </div>
           <div class="about-us">
+            <img src="image/thermometer_icon.svg" width="48" height="48">
             <p>
-              <img src="image/thermometer_icon.svg" width="48" height="48">
               Доставка нашего мороженого осуществляется в <br>
               специальном термопаке, который не дает мороженому <br>
               растаять и позволяет сохранить превосходный вкус.
             </p>
           </div>
           </div>
+          </div>
         </section>
+        <div class="new-and-newsletter">
         <article id="rectangle_blog" class="new-in-blog">
           <h2 class="new-in-blog-title">
             Новое в нашем блоге
@@ -277,7 +290,7 @@
         </img>
         </article>
         <section id="rectangle_newsletter" class="newsletter">  
-          <div id="rectangle_newsletter-white">
+          <div id="rectangle_newsletter-white" class="white-underlayer">
           <h2 class="visually-hidden"> 
             Подпишись на рассылку
           </h2>
@@ -297,6 +310,7 @@
           </form>
           </div>
         </section>
+        </div>
         <section id="rectangle_delivery" class="delivery">
           <h2 class="delivery-title">
             Доставка любимого<br> 
@@ -372,6 +386,7 @@
           </div>
         </section>
       </main>
+    </div>
     <footer class="page-footer">
       <section class="social">
         <ul class="social-list">

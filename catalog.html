@@ -52,6 +52,7 @@
           </ul>
         </nav>
       </header>
+    <div class="page-container">
     <main class="main-inner">
         <header class="inner-header">
             <h1 class="inner-header-title visually-hidden">Каталог</h1>
@@ -70,6 +71,7 @@
         </header>
         <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+            <div class="catalog-products-sorting">
             <form class="sorting-type">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
@@ -160,9 +162,10 @@
                 </fieldset>
                 <button class="button-transparent" type="submit">Применить</button>
             </form>
+            </div>
         </section>
         <section class="catalog catalog-popular">
-         <ul>
+         <ul class="catalog-list">
             <li class="catalog-item">
                 <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
                 <h4 class="catalog-item-title">
@@ -372,6 +375,7 @@
                 </button> 
              </li>
             </ul>
+            <div class="main-pagination">
             <button class="button pagination-show-more" type="button">Показать ещё</button>
             <ul class="pagination">
                 <li class="pagination-item">
@@ -400,9 +404,11 @@
                   </a>
                 </li>
               </ul>
+            </div>
 
           </section>
     </main>
+    </div>
     <footer class="page-footer">
         <section class="social">
           <ul class="social-list">
