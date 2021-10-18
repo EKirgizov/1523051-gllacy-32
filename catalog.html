@@ -10,10 +10,10 @@
         <h1 class="visually-hidden">
           Онлайн и офлайн-магазин Глэйси по продаже мороженого собственного проиводства 
         </h1>
-        <nav class="navigation">
-            <a href="index.html">
-              <img src="image/Logo_Gllacy.svg" width="137" height="56" alt="Логотип Глэйси">
-            </a>
+        <nav class="navigation inner-navigation">
+          <a href="index.html">
+            <img class="logo-gllacy" src="image/Logo_Gllacy.svg" width="137" height="56" alt="Логотип Глэйси">
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -25,11 +25,11 @@
               <a class="navigation-link" for="about-id">О компании</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-user">
             <li>
               <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-link-search">
               <a class="navigation-link" href="#">
                 <img src="image/search_button.svg" width="15" height="15" alt="Поиск по сайту">
                 <span class="visually-hidden">
@@ -37,16 +37,19 @@
                 </span>
               </a>
             </li>
-            <li class="navigation-item">
-              <img src="image/login_button.svg" width="15" height="15" alt="Войти">
-              <a class="navigation-link" href="#">Вход</a>
+            <li class="navigation-item navigation-link-login">
+                <a class="navigation-link" href="#">
+                    <img src="image/login_button.svg" width="15" height="15" alt="Войти">
+                    <span>Вход</span>
+                </a> 
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-link-cart">
               <a class="navigation-link" href="#">
-                <img src="image/cart_button.svg" width="16" height="15" alt="Войти">
-                <span class="visually-hidden">
-                  Корзина
-                </span>
+                  <img src="image/cart_button.svg" width="16" height="15" alt="Войти">
+                  <span class="visually-hidden">
+                    Корзина
+                  </span>
+                  <span>Пусто</span>
               </a>
             </li>
           </ul>
@@ -167,6 +170,7 @@
         <section class="catalog catalog-popular">
          <ul class="catalog-list">
             <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
                 <h4 class="catalog-item-title">
                   Малинка
@@ -182,9 +186,11 @@
                   <span class="visually-hidden">
                     Добавить в корзину
                   </span>
-                </button> 
+                </button>
+                </div>
               </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_2.png" width="168" height="168" alt="Шарик мороженого Фисташка">
                 <h4 class="catalog-item-title">
                   Фисташка
@@ -201,8 +207,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
               </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_3.png" width="168" height="168" alt="Шарик мороженого Черника">
                 <h4 class="catalog-item-title">
                   Черника
@@ -219,8 +227,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
               </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_4.png" width="168" height="168" alt="Шарик мороженого Бабл-гам">
                 <h4 class="catalog-item-title">
                   Бабл-гам
@@ -237,8 +247,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
               </li>
             <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_5.png" width="168" height="168" alt="Шарик мороженого Ежевика">
                 <h4 class="catalog-item-title">
                   Ежевика
@@ -254,8 +266,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+            </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_6.png" width="168" height="168" alt="Шарик мороженого Банан">
                 <h4 class="catalog-item-title">
                   Банан
@@ -263,16 +277,18 @@
                 <p class="catalog-item-about">
                     Сливочный пломбир с банановым вкусом
                 </p>
-                <h4>
+                <h4 class="catalog-item-price">
                   340 ₽/кг
-                </h4 class="catalog-item-price">
+                </h4>
                 <button class="button-add-to-cart" type="button">
                   <span class="visually-hidden">
                     Добавить в корзину
                   </span>
                 </button> 
+            </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_7.png" width="168" height="168" alt="Шарик мороженого Шоколадка">
                 <h4 class="catalog-item-title">
                   Шоколадка
@@ -288,8 +304,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_8.png" width="168" height="168" alt="Шарик мороженого Клубничка">
                 <h4 class="catalog-item-title">
                   Клубничка
@@ -305,8 +323,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_9.png" width="168" height="168" alt="Шарик мороженого Лимон">
                 <h4 class="catalog-item-title">
                   Лимон
@@ -322,8 +342,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_10.png" width="168" height="168" alt="Шарик мороженого Ментол">
                 <h4 class="catalog-item-title">
                   Ментол
@@ -339,8 +361,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_11.png" width="168" height="168" alt="Шарик мороженого Орешек">
                 <h4 class="catalog-item-title">
                   Орешек
@@ -356,8 +380,10 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
              </li>
               <li class="catalog-item">
+                <div class="card-product-white-rect-catalog">
                 <img src="image/catalog/catalog_12.png" width="168" height="168" alt="Шарик мороженого Крем-брюле">
                 <h4 class="catalog-item-title">
                   Крем-брюле
@@ -373,10 +399,11 @@
                     Добавить в корзину
                   </span>
                 </button> 
+                </div>
              </li>
             </ul>
             <div class="main-pagination">
-            <button class="button pagination-show-more" type="button">Показать ещё</button>
+            <button class="tipical-button-white pagination-show-more" type="button">Показать ещё</button>
             <ul class="pagination">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">
@@ -410,7 +437,7 @@
     </main>
     </div>
     <footer class="page-footer">
-        <section class="social">
+        <section class="social social-footer">
           <ul class="social-list">
             <li class="social-item">
               <a class="button" href="#">
