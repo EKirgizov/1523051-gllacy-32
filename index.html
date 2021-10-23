@@ -87,18 +87,20 @@
           <div class="slider-item">
           <div class="slider-box">
           <button class="slider-button slider-prev" type="button">
+            <img class="arrow-slider" src="image/arrow_slider_prev.png" width="38px" height="38px" alt="Предыдущее фото">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
           <div class="circle circle-max">
           <img src="image/ice_cream_strawberry_jam.png" width="306" height="507" alt="Пломбир с клубничным джемом">
           </div>
           <button class="slider-button slider-next" type="button">
+            <img class="arrow-slider" src="image/arrow-slider-next.png" width="38px" height="38px" alt="Следующее фото">
             <span class="visually-hidden">Следующее фото</span>
           </button>
-          <div class="circle circle-min">
+          <div class="circle circle-min-first">
             <img class="opacity-min-img" src="image/ice_cream_banana_mini.png" width="66" height="150" alt="Мороженое со вкусом банана">
           </div>
-          <div class="circle circle-min">
+          <div class="circle circle-min-second">
             <img class="opacity-min-img" src="image/ice_cream_caramel_mini.png" width="66" height="150" alt="Пломбир с маршмеллоу">
           </div>
           </div>
@@ -173,8 +175,8 @@
           </h2>
           <ul class="catalog-list">
           <li class="catalog-item">
+            <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
             <div class="card-product-white-rect">
-              <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
             <h4 class="catalog-item-title">
               Малинка
             </h4>
@@ -182,20 +184,22 @@
               Сливочное мороженое <br>
               с малиновым джемом
             </p>
+            <div class="catalog-price-wrapper">
             <h4 class="catalog-item-price">
               310 ₽/кг
             </h4>
             <button class="button-add-to-cart" type="button">
+              <img src="image/cart-red.svg" width="32" height="32" alt="Поместить в корзину">
               <span class="visually-hidden">
                 Добавить в корзину
               </span>
             </button> 
             </div>
-
+            </div>
           </li>
-          <li class="catalog-item">
-            <div class="card-product-white-rect">
+         <li class="catalog-item">
             <img src="image/catalog/catalog_2.png" width="168" height="168" alt="Шарик мороженого Фисташка">
+            <div class="card-product-white-rect">
             <h4 class="catalog-item-title">
               Фисташка
             </h4>
@@ -203,19 +207,22 @@
               Фисташковый пломбир <br>
               с кусочками шоколада
             </p>
+            <div class="catalog-price-wrapper">
             <h4 class="catalog-item-price">
               340 ₽/кг
             </h4>
             <button class="button-add-to-cart" type="button">
+              <img src="image/cart-red.svg" width="32" height="32" alt="Поместить в корзину">
               <span class="visually-hidden">
                 Добавить в корзину
               </span>
             </button>
             </div>
+            </div>
           </li>
           <li class="catalog-item">
-            <div class="card-product-white-rect">
             <img src="image/catalog/catalog_3.png" width="168" height="168" alt="Шарик мороженого Черника">
+            <div class="card-product-white-rect">
             <h4 class="catalog-item-title">
               Черника
             </h4>
@@ -223,19 +230,22 @@
               Крем-брюле <br>
               с черничным джемом
             </p>
+            <div class="catalog-price-wrapper">
             <h4 class="catalog-item-price">
               330 ₽/кг
             </h4>
             <button class="button-add-to-cart" type="button">
+              <img src="image/cart-red.svg" width="32" height="32" alt="Поместить в корзину">
               <span class="visually-hidden">
                 Добавить в корзину
               </span>
             </button> 
             </div>
+            </div>
           </li>
           <li class="catalog-item">
-            <div class="card-product-white-rect">
             <img src="image/catalog/catalog_4.png" width="168" height="168" alt="Шарик мороженого Бабл-гам">
+            <div class="card-product-white-rect">
             <h4 class="catalog-item-title">
               Бабл-гам
             </h4>
@@ -243,14 +253,17 @@
               Ванильный пломбир <br>
               со сладкой посыпкой
             </p>
+            <div class="catalog-price-wrapper">
             <h4 class="catalog-item-price">
               320 ₽/кг
             </h4>
             <button class="button-add-to-cart" type="button">
+              <img src="image/cart-red.svg" width="32" height="32" alt="Поместить в корзину">
               <span class="visually-hidden">
                 Добавить в корзину
               </span>
             </button> 
+            </div>
             </div>
           </li>
           </ul>
@@ -334,12 +347,13 @@
             привезет вам ваш заказ в течение часа!
           </p>
           </div>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-wrapper">
             <p class="delivery-title-text">
               Укажите адрес и дату доставки, и мы свяжемся <br>
               с вами, чтобы подтвердить заказ.
             </p>
-            <p class="delivery-form-date">
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group delivery-form-date">
               <span class="form-label form-label-icon">
                 <label for="delivery-date">
                   Дата</label>
@@ -348,7 +362,7 @@
               </span>
               <input type="text" id="delivery-date" name="delivery-date" placeholder="01.01.2020">
             </p>
-            <p class="delivery-form-phone">
+            <p class="field-group delivery-form-phone">
               <span class="form-label form-label-icon">
                 <label for="delivery-form-phone">
                   Телефон
@@ -358,7 +372,7 @@
               </span> 
               <input type="text" id="delivery-form-phone" name="delivery-form-phone" placeholder="+7 800 000-00-00">
             </p>
-            <p class="delivery-form-adress">
+            <p class="field-group delivery-form-adress">
               <span class="form-label form-label-icon">
                 <label for="delivery-form-adress">
                   Адрес
@@ -368,10 +382,11 @@
               </span>
               <input type="text" id="delivery-form-adress" name="delivery-form-adress" placeholder="ул. Большая Конюшенная, 19/8">
             </p>
-            <button class="tipical-button-red" type="submit"> 
+            <button class="tipical-button-red button-submit" type="submit"> 
               Отправить
             </button>
           </form>
+          </div>
         </section>
         <section id="rectangle_adress" class="adress-main-office">
           <div class="adress-office-white-rec">
@@ -424,7 +439,7 @@
       <section class="page-footer-link">
         <ul class="page-footer-link-list">
           <li class="page-footer-link-item">
-            <a href="#">  <img src="image/heart-icon.svg" width="14" height="13">Для поставщиков
+            <a href="#">  <img class="heart" src="image/heart-icon.svg" width="14" height="13">Для поставщиков
             </a>
           </li>
           <li class="page-footer-link-item">

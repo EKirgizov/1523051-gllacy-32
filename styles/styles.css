@@ -47,31 +47,15 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-  ol{
-      margin:0px;
-      padding: 0px;
-  }
-  ul{
-    margin:0px; 
-    padding: 0px;
-  }
   li{
       list-style-type: none;  
-      margin:0px;
-      padding: 0px; 
     }
   a{
     text-decoration: none;
-    margin: 0;
-    padding: 0;
     }
-h3{
+h3,h2,h4,p,ol,ul,li,a,.arrow-slider,.slider-button,.button-add-to-cart,span{
     margin: 0;
     padding: 0;
-}
-h2{
-    margin: 0;
-    padding: 0; 
 }
 .main-container {
     flex-grow: 1;
@@ -89,8 +73,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     width: 490px;
-    margin: 0;
-    padding: 0;
+    margin: 34px 0px;
 }
 .logo-gllacy{
     align-self: center;
@@ -104,33 +87,38 @@ h2{
     justify-content: flex-end;
     align-items: center;
     width: 490px;
-    margin: 0;
-    padding: 0;
     margin-left:auto;
-}
+    margin-top: 36px;
+    margin-bottom: 36px;
 
+}
 .navigation-user .navigation-item{
     display: flex;
     background: rgba(252, 252, 252, 0.3);
-    align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
+}
+.navigation-link{
+    display: block;
+    padding: 8px 16px;
 }
 .navigation-link-search{
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin-right: 16px;
+    margin-left: 16px;
 }
 .navigation-link-login{
     width: 92px;
     height: 32px;
     border-radius: 26px;
-    margin-right: 16px;
+    margin-left: 16px;
 }
 .navigation-link-cart{
     width: 97px;
     height: 32px;
     border-radius: 26px;
+    margin-left: 16px;
 }
 .navigation-link-search a{
     display: flex;
@@ -140,7 +128,6 @@ h2{
 .navigation-link-login a, .navigation-link-cart a{
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 .page-container {
     width: 1170px;
@@ -161,7 +148,7 @@ h2{
     font-weight: 700;
     color:inherit;
     text-decoration: none;
-    margin-right: 18px;
+    margin-right: 2px;
 }
 .navigation-user{
     font-size: 14px;
@@ -175,7 +162,6 @@ h2{
   }
   .breadcrumbs-link {
     margin-right: 32px;
-
   }
 .slider-title{
     display: flex;
@@ -210,6 +196,7 @@ h2{
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     margin-left: 70px;
+    margin-top:48px;
 }
 .slider-pagination{
     margin-top: 126px;
@@ -220,6 +207,8 @@ h2{
 }
 .slider-box{
     display: flex;
+    min-height: 507px;
+    align-items: center;
 }
 .circle{
     display: flex;
@@ -229,21 +218,27 @@ h2{
     border-radius: 50%;
 }
 .circle-max{
-    margin-top: 121px;
     margin-left: -19px;
     width:312px;
     height: 312px;
 }
-.circle-min{
-    margin-top: 229px;
+.circle-min-first,.circle-min-second{
     width:100px;
     height: 100px;
-    background: #FFCBD8;
+}
+.circle-min-first{
+    margin-right: 41px;;
 }
 .slider-prev, .slider-next{
+    position: relative;
+    z-index: 2;
     width: 38px;
     height: 38px;
-    margin-top: 258px;
+    align-self: center;
+}
+.slider-next{
+    margin-left: -19px;
+    margin-right: 37px;
 }
 .slider-item{
     display: flex;
@@ -256,10 +251,11 @@ h2{
     width: 104px;
 }
 .social-item{
-    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 2px;
 }
-.social-item:nth-child(3n){
-    margin-right: 0;
+.social-item:first-child{
+    margin-left: 0;
   }
 .social-slider{
     align-self: flex-end;
@@ -273,8 +269,11 @@ h2{
     line-height: 46px;
     text-align: center;
 }
+.about-us-title{
+    margin:56px 0px;
+}
 .catalog-popular-title{
-    margin-bottom: 107px;
+    margin-bottom: 56px;
 }
 .present-title{
     margin-bottom: 56px;
@@ -317,22 +316,36 @@ h2{
     font-size: 24px;
     line-height: 30px;
 }
-
 .catalog-list{
     width: 1170px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,270px);
+    column-gap: 30px;
+    row-gap: 40px;
     margin-bottom: 80px;
 }
-
+.catalog-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog-item img{
+    position: relative;
+    z-index: 2;
+}
 .card-product-white-rect{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin-top:-117px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     width: 270px;
     background: #FCFCFC;
-    border-radius: 8px;  
+    border-radius: 8px;
+    padding:40px 40px 0px 40px;
 }
 .card-product-white-rect-catalog{
     display: flex;
@@ -347,21 +360,32 @@ h2{
     margin-top: -51px;
     align-self: center;
 }
-.card-product-white-rect img{
-    margin-top: -51px;
-    align-self: center;
-}
 .about{
     display:flex;
     width: 1170px;
     margin-bottom: 80px;
 }
 .white-underlayer{
-    margin: auto;   
+    margin: auto; 
 }
 .catalog-item-title{
-    text-align: center;
-    margin-top:0px;
+    margin-top:93px;
+    margin-bottom: 8px;
+}
+.catalog-price-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    width: 190px;
+}
+.button-add-to-cart,.slider-button{
+    border:none;
+    outline: none;
+    background: none;
+}
+.catalog-item-about{
+    margin-bottom:16px;
 }
 .catalog-item-about,.newsletter-about,.delivery-about-text,.delivery-title-text{
     color: #565C66;
@@ -401,11 +425,12 @@ h2{
 }
 .about-us-list{
     display: grid;
-    grid-template-columns: 48px 1fr 48px 1fr;
+    grid-template-columns: 48px 16px 1fr 32px 48px 16px 1fr;
     margin-left:40px;
     margin-right: 40px;
-    grid-template-areas: "ice-cream ice-cream-title cow cow-title"
-    "leaf leaf-title thermometer thermometer-title";
+    grid-template-areas: "ice-cream . ice-cream-title . cow . cow-title"
+    "leaf . leaf-title . thermometer . thermometer-title";
+    row-gap: 40px;
 }
 .about-us p{
     color: #565C66;
@@ -452,6 +477,25 @@ h2{
     display: flex;
     margin-left: 26px;
 }
+.field{
+    width: 332px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #B9B9B9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.delivery-form-adress{
+    grid-column: 1 / -1;
+}
+input{
+    padding:14px 0px 14px 16px;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
 .tipical-button-red{
     display: flex; 
     font-weight: 700;
@@ -492,6 +536,7 @@ h2{
 }
 .delivery{
     display: flex;
+    width:1006px;
     margin-bottom: 80px;
 }
 .delivery-about-main{
@@ -507,15 +552,50 @@ h2{
     margin-top: 24px;
     margin-left: 100px;
 }
-.delivery-form{
-    margin-left: auto;
+.form-wrapper{
+    box-sizing: border-box;
     margin-right: 64px;
+    margin-left: auto;
     margin-top: 64px;
     width: 500px;
     height: 406px;
     background: #FCFCFC;
     box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
+    padding-left:40px;
+    padding-top:40px;
+}
+.delivery-form{
+    width: 420px;
+    display:grid;
+    grid-template-columns:117px 287px;
+    column-gap: 16px;
+}
+.field-group{
+    display: flex; 
+    flex-direction: column;
+    margin: 0px;
+}
+.delivery-title-text{
+    margin-bottom:32px;
+}
+.delivery-form-date,.delivery-form-phone{
+    margin-bottom:20px;
+}
+.delivery-form-adress{
+    margin-bottom:32px;
+}
+.delivery-form-date input, .delivery-form-phone input, .delivery-form-adress input{
+    background: #FFFFFF;
+    border: 1px solid #B9B9B9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.button-submit{
+    grid-column: 1 / -1;
+    justify-self:center;
+    width: 152px;
+    height: 44px;
 }
 .adress-main-office{
     display: flex;
@@ -600,10 +680,19 @@ h2{
     font-weight: 700;
 }
 .page-footer-link-list{
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 182px;
+    column-gap: 24px;
+    row-gap: 8px;
     margin-top: 48px;
     width: 356px;
     flex-wrap: wrap;
+}
+.heart{
+    margin-right: 9px;
+}
+.page-footer-link-list li:nth-child(n+2):nth-child(2n+1){
+    margin-left:24px;
 }
 .about-text{
     font-size: 12px;
@@ -697,7 +786,7 @@ h2{
     display:flex;
     width:807px;
     flex-wrap:wrap;
-    margin-bottom: 99px;
+    margin-bottom: 48px;
 
 }
 .main-pagination{
