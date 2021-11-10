@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header inner-navigation">
         <h1 class="visually-hidden">
-          Онлайн и офлайн-магазин Глэйси по продаже мороженого собственного проиводства 
+          Онлайн и офлайн-магазин Глэйси по продаже мороженого собственного проиводства
         </h1>
         <nav class="navigation">
           <a href="index.html">
@@ -17,41 +17,144 @@
           <ul class="navigation-list">
             <li class="navigation-item current">
               <a class="navigation-link" href="catalog.html">Каталог</a>
+              <div class="popover popover-subcatalog">
+                <ul class="subcatalog-list">
+                  <li class="subcatalog-item">
+                    <a href="#">Новинки</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a href="#">Сливочное</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="subcatalog-item current-subcatalog-item">
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" for="delivery-id">Доставка и оплата</a>
+              <a class="navigation-link" href="#">Доставка и оплата</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" for="about-id">О компании</a>
+              <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
           <ul class="navigation-user">
             <li>
-              <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="contacts-phone" href="tel:88005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item navigation-link-search">
+              <a class="navigation-link" href="#">
+                <img src="image/search_button.svg" width="15" height="15" alt="Поиск по сайту">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+              <div class="popover popover-search">
+                <label>
+                  <span class="visually-hidden">Поиск по сайту</span>
+                  <input class="field" type="text" name="popover-search-data" placeholder="Поиск по сайту">
+                </label>
+              </div>
+            </li>
+            <li class="navigation-item navigation-link-login">
                 <a class="navigation-link" href="#">
-                  <img src="image/search_button.svg" width="15" height="15" alt="Поиск по сайту">
+                    <img class="navigation-link-login-icon" src="image/login_button.svg" width="15" height="15" alt="Войти">
+                    <span>Вход</span>
+                </a>
+                <div class="popover popover-login">
+                    <h2 class="popover-login-title">Личный кабинет</h2>
+                    <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label>
+                      <span class="visually-hidden">Введите адрес электронной почты</span>
+                      <input class="field field-popover-email" type="text" name="popover-email" placeholder="email@example.com">
+                    </label>
+                    <label>
+                      <span class="visually-hidden">Введите пароль</span>
+                      <input class="field field-popover-password" type="password" name="popover-password" placeholder="пароль">
+                    </label>
+                    <div class="popover-login-wrapper">
+                    <button class="tipical-button-red button-popover-cart" type="submit">
+                        Войти
+                    </button>
+                        <div>
+                          <a href="#" class="popover-login-recovery">
+                          Забыли пароль?
+                        </a>
+                        <a href="#" class="popover-login-registration">
+                          Регистрация
+                        </a>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </li>
+            <li class="navigation-item navigation-link-cart">
+              <a class="navigation-link" href="#">
+                  <img class="navigation-link-cart-icon" src="image/cart-navigation.svg" width="16" height="16" alt="Корзина">
                   <span class="visually-hidden">
-                    Поиск
+                    Корзина
                   </span>
-                </a>
-              </li>
-              <li class="navigation-item navigation-link-login">
-                  <a class="navigation-link" href="#">
-                      <img class="navigation-link-login-icon" src="image/login_button.svg" width="15" height="15" alt="Войти">
-                      <span>Вход</span>
-                  </a> 
-              </li>
-              <li class="navigation-item navigation-link-cart">
-                <a class="navigation-link" href="#">
-                    <img class="navigation-link-cart-icon"src="image/cart_button.svg" width="16" height="15" alt="Корзина">
-                    <span class="visually-hidden">
-                      Корзина
-                    </span>
-                    <span>Пусто</span>
-                </a>
-              </li>
+                  <span>2 товара</span>
+              </a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="popover-cart-list">
+                    <li class="popover-cart-item">
+                      <img src="image/catalog/catalog_1.png" width="46" height="46" alt="Шарик мороженого Малина">
+                      <div class="popover-cart-item-about">
+                        <h4 class="popover-cart-title">
+                          Малинка
+                        </h4>
+                        <span class="popover-cart-item-price">
+                          1 кг х 310 ₽
+                        </span>
+                      </div>
+                      <h4 class="popover-cart-item-main-price">
+                        310 ₽
+                      </h4>
+                      <button class="remove-from-cart">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </li>
+                    <li class="popover-cart-item">
+                      <img src="image/catalog/catalog_4.png" width="46" height="46" alt="Шарик мороженого Бабл-гам">
+                      <div class="popover-cart-item-about">
+                        <h4 class="popover-cart-title">
+                          Бабл-гам
+                        </h4>
+                        <span class="popover-cart-item-price">
+                          1,5 кг х 320 ₽
+                        </span>
+                      </div>
+                      <h4 class="popover-cart-item-main-price">
+                        480 ₽
+                      </h4>
+                      <button class="remove-from-cart">
+                        <span class="visually-hidden">Убрать из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-cart-wrapper">
+                    <button class="tipical-button-red button-popover-cart" type="button">
+                      Оформить заказ
+                    </button>
+                    <h4 class="popover-cart-item-total-price">
+                      Итого: 790 ₽
+                    </h4>
+                  </div>
+                </div>
+            </div>
+            <div class="popover popover-cart-empty">
+              <h4>Ваша корзина пока пуста</h4>
+            </div>
+            </li>
           </ul>
         </nav>
       </header>
@@ -75,17 +178,16 @@
         <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <div class="catalog-products-sorting">
-            <form class="sorting-type">
-                <label class="sorting-title" for="sorting">Сортировка:</label>
-                <select class="select-control" id="sorting" name="sorting">
-                  <option value="popular">По популярности</option>
-                  <option value="cheap">Сначала дешёвое</option>
-                  <option value="expensive">Сначала дорогое</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-              </form>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <span class="zaplata"></span>
+                <div class="sorting-type">
+                  <label class="sorting-title" for="sorting">Сортировка:</label>
+                  <select class="select-control" id="sorting" name="sorting">
+                    <option value="popular">по популярности</option>
+                    <option value="cheap">сначала дешёвое</option>
+                    <option value="expensive">сначала дорогое</option>
+                  </select>
+                  <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                </div>
                 <fieldset class="catalog-filter-group group-price">
                     <div class="range-wrapper-inputs">
                     <legend class="catalog-filter-title">Цена:</legend>
@@ -107,7 +209,7 @@
                         </button>
                       </div>
                     </div>
-                    </fieldset>
+                  </fieldset>
                 <fieldset class="catalog-filter-group group-fat-content">
                     <legend class="catalog-filter-title">Жирность:</legend>
                     <ul class="catalog-filter-list">
@@ -117,7 +219,7 @@
                              <span class="control-mark"></span>
                              <span class="control-label">0%</span>
                             </label>
-                        </li> 
+                        </li>
                         <li>
                             <label class="fat-content">
                              <input class="visually-hidden control-input" type="radio" name="fat-content-check"  value="up-to-10%" checked>
@@ -151,28 +253,28 @@
                             <span class="control-label">шоколадные</span>
                           </label>
                         </li>
-                        <li class="catalog-filter-item"> 
+                        <li class="catalog-filter-item">
                           <label class="control">
                             <input class="control-input" type="checkbox" name="shugar-filler" checked>
                             <span class="control-mark"></span>
-                            <span class="control-label">сахарные присыпки</span>
+                            <span class="control-label">сахарные посыпки</span>
                           </label>
                         </li>
-                        <li class="catalog-filter-item"> 
+                        <li class="catalog-filter-item">
                             <label class="control">
                               <input class="control-input" type="checkbox" name="fruits-filler">
                               <span class="control-mark"></span>
                               <span class="control-label">фрукты</span>
                             </label>
                         </li>
-                        <li class="catalog-filter-item"> 
+                        <li class="catalog-filter-item">
                             <label class="control">
                               <input class="control-input" type="checkbox" name="syrup-filler">
                               <span class="control-mark"></span>
                               <span class="control-label">сиропы</span>
                             </label>
                         </li>
-                        <li class="catalog-filter-item"> 
+                        <li class="catalog-filter-item">
                             <label class="control">
                               <input class="control-input" type="checkbox" name="jam-filler">
                               <span class="control-mark"></span>
@@ -184,17 +286,16 @@
             </form>
             </div>
         </section>
-        <section class="catalog catalog-popular">
+        <section class="catalog">
          <ul class="catalog-list">
             <li class="catalog-item">
-                <img src="image/catalog/catalog_1.png" width="168" height="168" alt="Шарик мороженого Малина">
+                <img src="image/catalog/catalog_1.png" width="190" height="184" alt="Шарик мороженого Малина">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Малинка
                 </h4>
                 <p class="catalog-item-about">
-                  Сливочное мороженое <br>
-                  с малиновым джемом
+                  Сливочное мороженое с&nbsp;малиновым джемом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -207,19 +308,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
               </li>
              <li class="catalog-item">
-                <img src="image/catalog/catalog_2.png" width="168" height="168" alt="Шарик мороженого Фисташка">
+                <img src="image/catalog/catalog_2.png" width="190" height="184" alt="Шарик мороженого Фисташка">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Фисташка
                 </h4>
                 <p class="catalog-item-about">
-                  Фисташковый пломбир <br>
-                  с кусочками шоколада
+                  Фисташковый пломбир с&nbsp;кусочками шоколада
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -232,19 +332,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
               </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_3.png" width="168" height="168" alt="Шарик мороженого Черника">
+                <img src="image/catalog/catalog_3.png" width="190" height="184" alt="Шарик мороженого Черника">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Черника
                 </h4>
                 <p class="catalog-item-about">
-                  Крем-брюле <br>
-                  с черничным джемом
+                  Крем-брюле с&nbsp;черничным джемом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -257,19 +356,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
               </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_4.png" width="168" height="168" alt="Шарик мороженого Бабл-гам">
+                <img src="image/catalog/catalog_4.png" width="190" height="184" alt="Шарик мороженого Бабл-гам">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Бабл-гам
                 </h4>
                 <p class="catalog-item-about">
-                  Ванильный пломбир <br>
-                  со сладкой посыпкой
+                  Ванильный пломбир со&nbsp;сладкой посыпкой
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -282,18 +380,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
               </li>
             <li class="catalog-item">
-                <img src="image/catalog/catalog_5.png" width="168" height="168" alt="Шарик мороженого Ежевика">
+                <img src="image/catalog/catalog_5.png" width="190" height="184" alt="Шарик мороженого Ежевика">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Ежевика
                 </h4>
                 <p class="catalog-item-about">
-                    Сливочное мороженое с ежевичным джемом
+                    Сливочное мороженое с&nbsp;ежевичным джемом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -306,18 +404,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
             </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_6.png" width="168" height="168" alt="Шарик мороженого Банан">
+                <img src="image/catalog/catalog_6.png" width="190" height="184" alt="Шарик мороженого Банан">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Банан
                 </h4>
                 <p class="catalog-item-about">
-                    Сливочный пломбир с банановым вкусом
+                    Сливочный пломбир с&nbsp;банановым вкусом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -330,18 +428,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
             </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_7.png" width="168" height="168" alt="Шарик мороженого Шоколадка">
+                <img src="image/catalog/catalog_7.png" width="190" height="184" alt="Шарик мороженого Шоколадка">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Шоколадка
                 </h4>
                 <p class="catalog-item-about">
-                    Классический шоколадный пломбир
+                    Классический шоколадный&nbsp;пломбир
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -354,18 +452,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_8.png" width="168" height="168" alt="Шарик мороженого Клубничка">
+                <img src="image/catalog/catalog_8.png" width="190" height="184" alt="Шарик мороженого Клубничка">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Клубничка
                 </h4>
                 <p class="catalog-item-about">
-                    Сливочный пломбир с клубничным вкусом
+                    Сливочный пломбир с&nbsp;клубничным вкусом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -378,18 +476,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_9.png" width="168" height="168" alt="Шарик мороженого Лимон">
+                <img src="image/catalog/catalog_9.png" width="190" height="184" alt="Шарик мороженого Лимон">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Лимон
                 </h4>
                 <p class="catalog-item-about">
-                    Освежающий лимонный сорбет
+                    Освежающий лимонный&nbsp;сорбет
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -402,18 +500,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_10.png" width="168" height="168" alt="Шарик мороженого Ментол">
+                <img src="image/catalog/catalog_10.png" width="190" height="184" alt="Шарик мороженого Ментол">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Ментол
                 </h4>
                 <p class="catalog-item-about">
-                    Сливочный пломбир с ментоловым сиропом
+                    Сливочный пломбир с&nbsp;ментоловым сиропом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -426,18 +524,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_11.png" width="168" height="168" alt="Шарик мороженого Орешек">
+                <img src="image/catalog/catalog_11.png" width="190" height="184" alt="Шарик мороженого Орешек">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Орешек
                 </h4>
                 <p class="catalog-item-about">
-                    Фисташковый пломбир с шоколадным сиропом
+                    Фисташковый пломбир с&nbsp;шоколадным сиропом
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -450,18 +548,18 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
              </li>
               <li class="catalog-item">
-                <img src="image/catalog/catalog_12.png" width="168" height="168" alt="Шарик мороженого Крем-брюле">
+                <img src="image/catalog/catalog_12.png" width="190" height="184" alt="Шарик мороженого Крем-брюле">
                 <div class="card-product-white-rect">
                 <h4 class="catalog-item-title">
                   Крем-брюле
                 </h4>
                 <p class="catalog-item-about">
-                    Классическое крем-брюле 
+                    Классическое <br> крем-брюле
                 </p>
                 <div class="catalog-price-wrapper">
                 <h4 class="catalog-item-price">
@@ -474,13 +572,15 @@
                     <span class="visually-hidden">
                       Добавить в корзину
                     </span>
-                  </button> 
+                  </button>
                 </div>
                 </div>
              </li>
             </ul>
+            </section>
             <div class="main-pagination">
-            <button class="tipical-button-white pagination-show-more" type="button">Показать ещё</button>
+            <a class="tipical-button-white pagination-show-more" href="#">Показать ещё
+            </a>
             <ul class="pagination">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">
@@ -515,8 +615,6 @@
                 </li>
               </ul>
             </div>
-
-          </section>
     </main>
     </div>
     <footer class="page-footer">
@@ -549,17 +647,17 @@
               </a>
             </li>
             <li class="page-footer-link-item">
-              <a href="#"> 
+              <a href="#">
                 Наши документы
               </a>
             </li>
             <li class="page-footer-link-item">
-              <a href="#"> 
+              <a href="#">
                 О производстве
               </a>
             </li>
             <li class="page-footer-link-item">
-              <a href="#"> 
+              <a href="#">
                 Экологические стандарты
               </a>
             </li>
@@ -568,10 +666,10 @@
         <section class="made-in">
           <img src="image/logo_htmlacademy.svg" width="93" height="27" alt="логотип htmlacademy">
           <p class="about-text">
-            Сделано в 
+            Сделано в
             <a class="htmlacademy-link" target="_blank" href="https://htmlacademy.ru/">
             .html academy
-            </a> 
+            </a>
             © 2021
           </p>
         </section>
