@@ -55,6 +55,9 @@
               </span>
             </a>
             <div class="popover popover-search">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="clear" fill-rule="evenodd" clip-rule="evenodd" d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z" fill="#2D3440"/>
+                </svg>
               <label>
                 <span class="visually-hidden">Поиск по сайту</span>
                 <input class="field" type="text" name="popover-search-data" placeholder="Поиск по сайту">
@@ -64,7 +67,7 @@
           <li class="navigation-item navigation-link-login">
               <a class="navigation-link" href="#">
                   <img class="navigation-link-login-icon" src="image/login_button.svg" width="15" height="15" alt="Войти">
-                  <span>Вход</span>
+                  Вход
               </a>
               <div class="popover popover-login">
                   <h2 class="popover-login-title">Личный кабинет</h2>
@@ -78,9 +81,9 @@
                     <input class="field field-popover-password" type="password" name="popover-password" placeholder="пароль">
                   </label>
                   <div class="popover-login-wrapper">
-                  <button class="tipical-button-red button-popover-cart" type="submit">
-                      Войти
-                  </button>
+                      <button class="tipical-button-red button-popover-cart" type="submit">
+                        Войти
+                     </button>
                       <div>
                         <a href="#" class="popover-login-recovery">
                         Забыли пароль?
@@ -99,14 +102,14 @@
                 <span class="visually-hidden">
                   Корзина
                 </span>
-                <span>Пусто</span>
+                Пусто
             </a>
             <div class="popover popover-cart">
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="popover-cart-list">
                   <li class="popover-cart-item">
-                    <img src="image/catalog/catalog_1.png" width="46" height="46" alt="Шарик мороженого Малина">
+                    <img src="image/catalog/catalog_1.png" width="50" height="50" alt="Шарик мороженого Малина">
                     <div class="popover-cart-item-about">
                       <h4 class="popover-cart-title">
                         Малинка
@@ -118,12 +121,12 @@
                     <h4 class="popover-cart-item-main-price">
                       310 ₽
                     </h4>
-                    <button class="remove-from-cart">
+                    <button class="remove-from-cart" type="button">
                       <span class="visually-hidden">Убрать из корзины</span>
                     </button>
                   </li>
                   <li class="popover-cart-item">
-                    <img src="image/catalog/catalog_4.png" width="46" height="46" alt="Шарик мороженого Бабл-гам">
+                    <img src="image/catalog/catalog_4.png" width="50" height="50" alt="Шарик мороженого Бабл-гам">
                     <div class="popover-cart-item-about">
                       <h4 class="popover-cart-title">
                         Бабл-гам
@@ -135,7 +138,7 @@
                     <h4 class="popover-cart-item-main-price">
                       480 ₽
                     </h4>
-                    <button class="remove-from-cart">
+                    <button class="remove-from-cart" type="button">
                       <span class="visually-hidden">Убрать из корзины</span>
                     </button>
                   </li>
@@ -205,10 +208,10 @@
           </button>
           <div class="circle-min">
             <div class="circle circle-min-first">
-              <img class="opacity-min-img" src="image/ice_cream_banana.png" width="76" height="150" alt="Мороженое со вкусом банана">
+              <img class="opacity-min-img" src="image/ice_cream_banana.png" width="86" height="150" alt="Мороженое со вкусом банана">
             </div>
             <div class="circle circle-min-second">
-              <img class="opacity-min-img" src="image/ice_cream_caramel.png" width="66" height="150" alt="Пломбир с маршмеллоу">
+              <img class="opacity-min-img" src="image/ice_cream_caramel.png" width="86" height="150" alt="Пломбир с маршмеллоу">
             </div>
           </div>
           </div>
@@ -279,9 +282,14 @@
               Сливочное мороженое с&nbsp;малиновым джемом
             </p>
             <div class="catalog-price-wrapper">
-            <h4 class="catalog-item-price">
-              310 ₽/кг
-            </h4>
+              <div>
+                <h4 class="catalog-item-price">
+                  310
+                </h4>
+                <h4 class="catalog-item-price">
+                  ₽/кг
+                </h4>
+              </div>
             <button class="button-add-to-cart" type="button">
               <svg aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
                 <path class="add-to-cart" fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z" fill="#FCFCFC"/>
@@ -302,9 +310,14 @@
               Фисташковый пломбир с&nbsp;кусочками шоколада
             </p>
             <div class="catalog-price-wrapper">
-            <h4 class="catalog-item-price">
-              340 ₽/кг
-            </h4>
+              <div>
+                <h4 class="catalog-item-price">
+                  340
+                </h4>
+                <h4 class="catalog-item-price">
+                  ₽/кг
+                </h4>
+              </div>
             <button class="button-add-to-cart" type="button">
               <svg aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
                 <path class="add-to-cart" fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z" fill="#FCFCFC"/>
@@ -326,9 +339,14 @@
               Крем-брюле с&nbsp;черничным джемом
             </p>
             <div class="catalog-price-wrapper">
-            <h4 class="catalog-item-price">
-              330 ₽/кг
-            </h4>
+              <div>
+                <h4 class="catalog-item-price">
+                  330
+                </h4>
+                <h4 class="catalog-item-price">
+                  ₽/кг
+                </h4>
+              </div>
             <button class="button-add-to-cart" type="button">
               <svg aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
                 <path class="add-to-cart" fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z" fill="#FCFCFC"/>
@@ -350,9 +368,14 @@
               Ванильный пломбир со&nbsp;сладкой посыпкой
             </p>
             <div class="catalog-price-wrapper">
-            <h4 class="catalog-item-price">
-              320 ₽/кг
-            </h4>
+            <div>
+              <h4 class="catalog-item-price">
+                320
+              </h4>
+              <h4 class="catalog-item-price">
+                ₽/кг
+              </h4>
+            </div>
             <button class="button-add-to-cart" type="button">
               <svg aria-hidden="true" focusable="false" width="15" height="14" xmlns="http://www.w3.org/2000/svg">
                 <path class="add-to-cart" fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z" fill="#FCFCFC"/>
@@ -444,17 +467,15 @@
                 <button class="info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
               </span>
-              <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.01.2020">
+              <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
             </p>
             <p class="field-group delivery-form-phone">
               <span class="form-label">
                 <label for="delivery-form-phone">
                   Телефон
                 </label>
-                  <button class="info" type="button">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
               </span>
-              <input class="field" type="text" id="delivery-form-phone" name="delivery-form-phone" placeholder="+7 800 000-00-00">
+              <input class="field" type="text" id="delivery-form-phone" name="delivery-form-phone" placeholder="+7 800 999-00-00">
             </p>
             <p class="field-group delivery-form-adress">
               <span class="form-label form-label-icon">
@@ -478,7 +499,7 @@
               Адрес главного офиса и&nbsp;офлайн-магазина:
             </h2>
             <p class="adress-office">
-              наб. Реки Карповки, 5&nbsp;лит&nbsp;П,&nbsp;Санкт-Петербург
+              наб. реки Карповки, 5&nbsp;лит&nbsp;П,&nbsp;Санкт-Петербург
             </p>
             <h2 class="phone-office-title">
               Для заказов по телефону:
@@ -500,19 +521,19 @@
       <section class="social">
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://vk.com/htmlacademy" target="_blank">
               <img src="image/vk_icon.svg" width="24" height="24" alt="Мы ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.facebook.com/htmlacademy" target="_blank">
               <img src="image/facebook.svg" width="24" height="24" alt="Мы в Фейсбуке">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.instagram.com/htmlacademy" target="_blank">
               <img src="image/instagram.svg" width="24" height="24" alt="Мы в Инстаграм">
               <span class="visually-hidden">Инстаграм</span>
             </a>
@@ -555,7 +576,7 @@
     </footer>
     <div class="modal-container">
       <div class="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
@@ -570,10 +591,9 @@
             </p>
             <p class="field-group">
               <label class="visually-hidden" for="feedback-text">Введите текст в свободной форме</label>
-              <textarea class="feedback-text field" id="feedback-text" name="feedback-text" rows="6" placeholder="В свободной форме">
-              </textarea>
+              <textarea class="feedback-text field" id="feedback-text" name="feedback-text" rows="6" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="tipical-button-red button-feedback-form" type="button">
+            <button class="tipical-button-red button-feedback-form" type="submit">
               Отправить
             </button>
           </form>
